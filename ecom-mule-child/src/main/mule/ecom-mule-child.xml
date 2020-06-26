@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns="http://www.mulesoft.org/schema/mule/core"
+	xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd">
+	<flow name="ecom-mule-childFlow" doc:id="3a9315a1-227b-40b6-9494-a3ee4fb45b6a" >
+		<http:listener doc:name="Listener" doc:id="4c1ef9d5-f80c-4c4b-a7aa-3a5c73b5318f" config-ref="HTTP_Listener_config" path="/ecom-child"/>
+		<logger level="INFO" doc:name="Logger" doc:id="58eb835a-e022-4286-bcdb-4897abbab9bd" />
+	</flow>
+</mule>
